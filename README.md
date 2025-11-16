@@ -46,13 +46,13 @@ The analysis produced four critical charts offering different perspectives on th
 ### **Chart 1: Comparative Closing Price Trend (Line Chart)**
 <img width="376" height="218" alt="image" src="https://github.com/user-attachments/assets/0a98465e-8afd-4f2e-9664-b43c32d70184" />
 
-*(Generated using a Pivot Chart filtered to the top 5 most frequent tickers, e.g., MMM, NVR, NTRS, NSC, NDSN)*
+(Using a Pivot Chart filtered to the top 5 most frequent tickers, e.g., MMM, NVR, NTRS, NSC, NDSN)
 * **Insight:** Tracks the daily closing price movement over the six-month period, revealing distinct volatility and price ranges for high-value stocks (like NVR) compared to lower-priced counterparts. It shows how specific companies align with or deviate from the general market trend.
 
 ### **Chart 2: Total Trading Volume by Month (Bar Chart)**
 <img width="366" height="224" alt="image" src="https://github.com/user-attachments/assets/00ee48c8-3261-4589-9d7a-58a18d78136f" />
 
-*(Generated using a Pivot Chart summing the `volume` field by the `Month` field)*
+(Using a Pivot Chart summing the `volume` field by the `Month` field)
 * **Insight:** Aggregates total market activity across all S\&P 500 stocks.
     * **Peak Activity:** Trading volume peaked significantly in **April (Month 4)**, indicating the highest liquidity and market interest during the period.
     * **Lowest Activity:** The market was least active in **January (Month 1)**.
@@ -60,7 +60,7 @@ The analysis produced four critical charts offering different perspectives on th
 ### **Chart 3: Distribution of Daily Price Returns (Histogram)**
 <img width="530" height="399" alt="image" src="https://github.com/user-attachments/assets/eb76c7a1-3869-43c9-9d37-ba104e81ea70" />
 
-*(Generated using the **Histogram tool** on a helper column calculating `(Closing - Opening) / Opening` percent change)*
+(Using the **Histogram tool** on a helper column calculating `(Closing - Opening) / Opening` percent change)
 * **Insight:** Measures the daily volatility and overall sentiment of the market.
     * **Low Volatility:** The distribution is tightly clustered around $0\%$, typical for a mature index.
     * **Positive Drift:** The mean daily return was slightly positive ($\mathbf{+0.0764\%}$), suggesting more trading days ended with slight gains than losses.
@@ -69,7 +69,7 @@ The analysis produced four critical charts offering different perspectives on th
 ### **Chart 4: Distribution of Monthly Net Price Change (Box Plot)**
 <img width="1000" height="600" alt="2" src="https://github.com/user-attachments/assets/81030e48-9fd8-4629-b72e-4b7df666820c" />
 
-*(Generated using the **Box and Whisker** tool on a calculated difference between the **Max Closing** and **Min Opening** price for each Ticker/Month)*
+(Using the **Box and Whisker** tool on a calculated difference between the **Max Closing** and **Min Opening** price for each Ticker/Month)
 * **Insight:** Reveals the long-term risk and reward profile for the typical stock over monthly horizons.
     * **Worst Performance:** The median stock experienced the largest net loss in **March ($\mathbf{- \$4.09}$)**.
     * **Strongest Rebound:** The median stock saw the largest net gain in **May ($\mathbf{+ \$3.91}$)**, representing a major market reversal.
