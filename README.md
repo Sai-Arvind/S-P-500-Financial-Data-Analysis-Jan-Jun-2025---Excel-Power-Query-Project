@@ -46,7 +46,7 @@ The analysis produced four critical charts offering different perspectives on th
 ### **Chart 1: Comparative Closing Price Trend (Line Chart)**
 <img width="376" height="218" alt="image" src="https://github.com/user-attachments/assets/0a98465e-8afd-4f2e-9664-b43c32d70184" />
 
-(Using a Pivot Chart filtered to the top 5 most frequent tickers, e.g., MMM, NVR, NTRS, NSC, NDSN)
+(Using a Pivot Chart filtered to the top 5 most frequent tickers, e.g., TPL, NVR, TDG, NFLX, MTD)
 * **Insight:** Tracks the daily closing price movement over the six-month period, revealing distinct volatility and price ranges for high-value stocks (like NVR) compared to lower-priced counterparts. It shows how specific companies align with or deviate from the general market trend.
 
 ### **Chart 2: Total Trading Volume by Month (Bar Chart)**
@@ -71,8 +71,8 @@ The analysis produced four critical charts offering different perspectives on th
 
 (Using the **Box and Whisker** tool on a calculated difference between the **Max Closing** and **Min Opening** price for each Ticker/Month)
 * **Insight:** Reveals the long-term risk and reward profile for the typical stock over monthly horizons.
-    * **Worst Performance:** The median stock experienced the largest net loss in **March ($\mathbf{- \$4.09}$)**.
-    * **Strongest Rebound:** The median stock saw the largest net gain in **May ($\mathbf{+ \$3.91}$)**, representing a major market reversal.
+    * **Worst Performance:** The median stock experienced the largest net loss in **March $4.09**.
+    * **Strongest Rebound:** The median stock saw the largest net gain in **May $3.91**, representing a major market reversal.
     * **Outliers:** The prevalence of outliers (individual dots) highlights that even in challenging months (like March), specific stocks achieved massive gains, showcasing significant individual stock risk and opportunity.
 
 ---
@@ -80,7 +80,21 @@ The analysis produced four critical charts offering different perspectives on th
 ```
 ## 📂 Repository Structure
 
-financial-data-analytics/ │ ├── datasets/ # Raw S&P 500 financial dataset (e.g., the original CSV/Excel files) │ └── sp500-companies-finance.csv │ ├── reports/ │ └── Financial_KPI_Model.xlsx # Final Excel file containing the consolidated data, Pivot Tables, and all 4 Charts │ ├── docs/ # Documentation and chart explanation notes │ ├── power_query_etl_steps.pdf # Detailed Power Query steps │ ├── chart_analysis.md # Summary of the four chart insights │ └── README.md # Main project documentation
+S-P-500-Advanced-Excel-Analytics-Power-Query-Pivot-Tables/
+│ ├── datasets/ # Raw input financial data
+│ └── sp500-companies-finance.csv # 📥 The original S&P 500 financial dataset.
+│
+│ ├── docs/ # Documentation and resources for the project
+│ ├── power_query_etl_steps.md # 📝 Details of the data cleaning, unpivoting, and M-code transformation steps.
+│ ├── kpi_and_chart_definitions.md # 📈 Definitions of KPIs (e.g., Monthly Net Change) and chart analysis.
+│ └── month_sorting_logic.md # 💡 Explanation of the date/month logic for time-series integrity.
+│
+│ ├── reports/ # Final analysis files and deliverables
+│ └── Financial_KPI_Model.xlsx # 📊 Final Excel Model: Contains the consolidated data, all Pivot Tables, and the four analytical Pivot Charts.
+│ ├── README.md # 📖 Main project overview and documentation.
+│
+├── LICENSE # 📜 License information (e.g., MIT License).
+└── .gitignore # 🚫 Git ignored files (e.g., temporary Excel files like ~$Financial_KPI_Model.xlsx).
 
 ```
 ---
@@ -93,9 +107,9 @@ Let’s connect!
 
 📧 **Email:** saiarvind5081@gmail.com
 
-🔗 **LinkedIn:** (https://www.linkedin.com/in/saiarvindofficial/)
+🔗 **LinkedIn:** https://www.linkedin.com/in/saiarvindofficial/
 
-🔗 **GitHub:** (https://github.com/Sai-Arvind)
+🔗 **GitHub:** https://github.com/Sai-Arvind
 
 ***
 
